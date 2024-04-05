@@ -1,0 +1,104 @@
+.white-padding {
+    padding: 20px ; 
+    background-color: white ;
+}
+
+.gray-padding {
+    padding: 30px 40px ; 
+    background-color: #d3d3d3;
+}
+
+.yellow-padding {
+    background-color: #ffffdc ;  
+}
+
+body {
+    margin: 10%  ;
+    padding:0px ;
+    border: 2px solid red;
+    background-color: #fcfcea ; 
+}
+
+header {
+    padding: 10px ;
+    text-align: center;
+    background-color: rgb(239, 44, 44);
+    font-weight: bold;
+    color: white;
+}
+
+main {
+    padding: auto ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: normal ;
+    font-size:medium;
+}
+
+.separator {
+    width: 100% ;
+    height: 2px;
+    background-color: rgb(239, 44, 44);
+}
+
+.section {
+    padding: auto ;  /* Ajoutez d'autres styles au besoin */
+}
+
+footer {
+    background-color: white;
+    border-top: auto; /* Bordures du pied de page */
+    color: auto;
+    text-align:  right ;
+    padding: auto ;
+    bottom: auto;
+    width: auto;
+    border-left: 15px solid grey;
+    border-right: 15px solid grey;
+}
+
+.footer-content {
+    max-width: 800px; /* Ajustez la largeur selon vos besoins */
+    margin: auto;
+    color:black ;
+    background-color: white;
+}
+
+footer a {
+    text-decoration: auto; /* Soulignez le lien */
+    color: auto; /* Couleur du texte du lien */
+}
+
+.centered-image {
+    
+    max-width: 300px;
+    max-height: 250px;
+}
+
+.centered-square {
+    text-align: center ;
+    padding: auto;
+    margin: auto;
+    background-color: white ; /* Couleur de fond blanche */
+    border: 1px solid black; 
+    border-collapse: collapse;
+    width:310px ; /* Largeur  */
+    height: 300px;
+    
+}
+
+.gray-underline {
+    color: grey ; /* Couleur grise */
+    text-decoration:underline ; /* Soulignez le lien */
+}
+
+.literature-poem {
+    padding: 10px; /* Ajout d'une marge interne de 10px pour plus d'espace à l'intérieur du div */
+    width: fit-content;
+    box-sizing:content-box ; /* Inclure la marge et le rembourrage dans la largeur du div */
+}
+
+.literature-poem p {
+    margin:auto  ;
+    line-height:auto;
+}
+
