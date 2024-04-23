@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function changefond(clr)
+         {
+            document.body.style.backgroundColor = clr;
+         }
+         function link()
+         {
+            alert("pas le droit d’aller là");
+            //window.location.href="page1.html"
+         }
+    </script>
+</head>
+<body>
+    <button  onclick="changefond()">Change color</button>
+    <a href="index.html" onMouseOver="changefond('#FF0000')"  onmouseout="changefond('#ffffff')" onclick="link(); return false;" >Sommaire</a>
+
+</body>
+</html>

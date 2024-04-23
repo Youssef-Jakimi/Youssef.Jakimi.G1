@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var count = new Date("Jan 15 ,2026").getTime();
+
+var x= setInterval(function(){
+        
+            var now=new Date().getTime();
+            var diff=count-now;
+            // Calcul des jours
+            var jours = Math.floor(diff / (1000 * 60 * 60 * 24));
+            // Calcul des heures
+            var heures = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            // Calcul des minutes
+            var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            // Calcul des secondes
+            var secondes = Math.floor((diff % (1000 * 60)) / 1000);
+
+           document.getElementById("test").innerHTML = jours + "d " + heures + "h "
+  + minutes + "m " + secondes + "s ";
+
+     if (diff < 0) {
+    clearInterval(x);
+      document.write("Error");
+     }
+}, 1000);
+
+
+    </script>
+<p id="test"></p>
+</body>
+</html>

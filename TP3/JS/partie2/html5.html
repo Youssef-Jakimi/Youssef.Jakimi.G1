@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function altimages() {
+    var img1 = document.getElementById('img1');
+    var img2 = document.getElementById('img2');
+    
+    if (img1.style.display === "none") {
+        img1.style.display = "block";
+        img2.style.display = "none";
+    } else {
+        img1.style.display = "none";
+        img2.style.display = "block";
+    }
+    }
+    function on(){
+        inter = setInterval(altimages, 2000);
+    }
+    function off(){
+        clearInterval(inter);
+    }
+
+    </script>
+    <img style="width: 200px;" id="img1" src="/web - Copy/TP3/JS/partie2/1.png" >
+    <img style="width: 200px;" id="img2" src="/web - Copy/TP3/JS/partie2/2.png" >
+    <button onclick="on()">ON </button>
+    <button onclick="off()">OFF </button>
+
+</body>
+</html>

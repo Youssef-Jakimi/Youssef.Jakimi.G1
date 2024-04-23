@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <script>
+    while (true) {
+        let expr = prompt("Veuillez entrer une expression arithmétique :");
+
+        if (expr === null) {
+            alert("Fin du programme.");
+            break;
+        }
+
+        try {
+            let resultat = eval(expr);
+            alert(`Le résultat de l'expression ${expr} est : ${resultat}`);
+        } catch (e) {
+            alert(`Erreur : ${e.message}`);
+        }
+    }
+    </script>
+
+</body>
+</html>

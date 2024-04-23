@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function done(){
+            var reponse1= document.querySelector('input[name="capitale1"]:checked');
+            var reponse2= document.querySelector('input[name="capitale2"]:checked');
+            var result=document.getElementById('resultat');
+
+            if(reponse1 && reponse2){
+                if(reponse1.value==='Rabat' && reponse2.value==='Madrid')
+                {
+                    result.textContent = "Parfait!!";
+                }else{
+                    result.textContent = "Autre fois!!";
+                }
+            } else {
+        alert("Veuillez répondre à toutes les questions.");
+            
+            }
+        }
+
+
+            
+
+    </script>
+
+<form id="cqm">
+    <p>capital de Maroc :  </p>
+    <input type="radio" id="Rabat" name="capitale1" value="Rabat">
+  <label for="Rabat">Rabat</label><br>
+  <input type="radio" id="Fes" name="capitale1" value="Fes">
+  <label for="Fes">Fes</label><br>
+  <input type="radio" id="Tanger" name="capitale1" value="Tanger">
+  <label for="Tanger">Tanger</label><br><br>
+  
+  <p>capital de Spain :  </p>
+  <input type="radio" id="Barcelone" name="capitale2" value="Barcelone">
+  <label for="Barcelone">Barcelone</label><br>
+  <input type="radio" id="Madrid" name="capitale2" value="Madrid">
+  <label for="Madrid">Madrid</label><br>
+  <input type="radio" id="Seville" name="capitale2" value="Seville">
+  <label for="Seville">Seville</label><br><br>
+
+  <button type="button" onclick="done()">Valider</button>
+
+</form>
+<div id="resultat"></div>
+</body>
+</html>

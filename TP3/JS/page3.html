@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let number = Math.floor (10* Math.random())
+        document.write("La Valeur est : "+number);
+
+        let rand = prompt("Veuillez Enter un Essai : ");
+    while(number!=rand)
+    {
+        if(rand>number){
+            alert("Trop Grand ")
+        }else{
+            alert("Trop Petit ")
+ 
+        }
+        rand = prompt("Veuillez Enter un autre Essai : ");
+    }
+    alert("Gagné!!!");
+
+
+
+    </script>
+</body>
+</html>
